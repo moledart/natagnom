@@ -1,0 +1,15 @@
+---
+// Click button, get confetti!
+// Styled by Tailwind :)
+---
+
+<button class="py-3 px-6 bg-zinc-900 text-white focus:outline-none">
+  <slot />
+</button>
+
+<script>
+  import confetti from 'canvas-confetti';
+  document.body
+    .querySelector('button')
+    .addEventListener('click', () => confetti());
+</script>
