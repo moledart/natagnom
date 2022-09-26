@@ -7,7 +7,7 @@ const links = [
   },
   {
     title: 'Проекты',
-    link: '',
+    link: '#projects',
     active: false,
   },
   {
