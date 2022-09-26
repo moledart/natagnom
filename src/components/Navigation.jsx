@@ -12,7 +12,7 @@ const links = [
   },
   {
     title: 'Издательство',
-    link: '',
+    link: '#publish',
     active: false,
   },
   {
@@ -60,7 +60,11 @@ export default function Navigation(props) {
         } lg:flex lg:flex-row lg:justify-end lg:gap-5`}
       >
         {links.map((link, index) => (
-          <li className="flex items-center py-3" key={index}>
+          <li
+            className="flex items-center py-3"
+            key={index}
+            onClick={() => setMenuOpen(false)}
+          >
             <a
               href={link.link}
               className="font-medium lg:text-base text-lg text-zinc-700 hover:text-zinc-900"
