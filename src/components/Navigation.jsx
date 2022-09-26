@@ -2,7 +2,7 @@ import { useState } from 'react';
 const links = [
   {
     title: 'Биография',
-    link: '',
+    link: '#about',
     active: false,
   },
   {
@@ -17,7 +17,7 @@ const links = [
   },
   {
     title: 'Типография',
-    link: '',
+    link: '#printshop',
     active: false,
   },
   {
@@ -38,7 +38,7 @@ export default function Navigation(props) {
   return (
     <nav
       className={`${
-        menuOpen && 'h-screen'
+        menuOpen && 'fixed w-full h-screen bg-zinc-50'
       } flex flex-col lg:flex-row justify-between p-5 lg:h-auto lg:px-10`}
     >
       <div className="flex justify-between items-center">
@@ -55,12 +55,12 @@ export default function Navigation(props) {
       <ul
         className={`${
           menuOpen
-            ? 'flex flex-col flex-1 gap-5 items-end justify-center'
+            ? 'flex flex-col flex-1 gap-4 items-end justify-center'
             : 'hidden'
         } lg:flex lg:flex-row lg:justify-end lg:gap-5`}
       >
         {links.map((link, index) => (
-          <li className="flex items-center py-5" key={index}>
+          <li className="flex items-center py-3" key={index}>
             <a
               href={link.link}
               className="font-medium lg:text-base text-lg text-zinc-700 hover:text-zinc-900"
