@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon';
+import LinkTo from './LinkTo.astro';
 ---
 
 <section
@@ -15,11 +15,6 @@ import { Icon } from 'astro-icon';
   </div>
   <div class="lg:basis-2/5">
     <img src="/printhouse.png" alt="" class="mb-5" />
-    <a
-      href="https://zzpost.ru/"
-      class="text-zinc-700 underline underline-offset-8 hover:text-indigo-600 flex gap-2 items-center"
-      >Перейти на сайт
-      <Icon name="mdi:arrow-right" class="h-5" />
-    </a>
+    <LinkTo address="https://zzpost.ru" />
   </div>
 </section>

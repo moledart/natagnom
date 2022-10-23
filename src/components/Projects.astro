@@ -1,57 +1,201 @@
+---
+import LinkTo from './LinkTo.astro';
+---
+
 <section class="py-10 flex flex-col" id="projects">
   <small>Проекты</small>
-  <ol class="list-decimal list-inside text-xl flex flex-col gap-10 w-full">
-    <li class="lg:max-w-[50%] text-xl font-medium">
-      Типография полного цикла
-      <p class="text-base font-normal text-zinc-500 mb-6">
-        для рекламных агентств, издательств, продюсерских центров, театров,
-        производителей товаров и услуг, книжных сетей, поставщиков
-        маркетплейсов. В активах 14 единиц полиграфического оборудования
-      </p>
-      <a
-        href="https://zzpost.ru"
-        class="flex text-base items-end gap-3 hover:text-indigo-600 leading-none"
+  <ul class="text-xl flex flex-col gap-12 w-full">
+    <li
+      class="text-xl font-medium flex gap-5 flex-col md:flex-row justify-between"
+    >
+      <div class="flex flex-col justify-start">
+        <h3 class="text-2xl mb-2">Типография полного цикла</h3>
+        <p class="text-base font-normal text-zinc-500 max-w-[70ch]">
+          для рекламных агентств, издательств, продюсерских центров, театров,
+          производителей товаров и услуг, книжных сетей, поставщиков
+          маркетплейсов. В активах 14 единиц полиграфического оборудования
+        </p>
+        <LinkTo address="https://zzpost.ru" />
+      </div>
+      <div class="max-w-md max-h-80 object-contain overflow-hidden">
+        <img src="/printshop.jpg" alt="Типография" />
+      </div>
+    </li>
+    <li
+      class="text-xl font-medium flex gap-5 flex-col md:flex-row justify-between"
+    >
+      <div class="flex-1">
+        <h3 class="text-2xl mb-2">Издательство</h3>
+        <p class="text-base font-normal text-zinc-500 max-w-[70ch]">
+          разработка/ доработка, производство и регистрация книг, тематических
+          изданий и развивающей продукции под заказ.<br />- Подготовка
+          материалов для издания (дизайн, верстка, корректура)<br />-
+          Производство<br />- Регистрация необходимой документации (консультации
+          или услуга по&nbsp;сертификации, декларированию, ISBN, ШК и тд)
+        </p>
+      </div>
+      <div class="max-w-md max-h-80 object-contain overflow-hidden">
+        <img src="/publishing.jpg" alt="Издательские материалы" />
+      </div>
+    </li>
+    <li
+      class="text-xl font-medium flex gap-5 flex-col md:flex-row justify-between"
+    >
+      <div class="flex-1">
+        <h3 class="text-2xl mb-2">Разработка продукта</h3>
+        <p class="text-base font-normal text-zinc-500 max-w-[70ch]">
+          концепции, линейки продукции, регистрация товарного знака,
+          производство и продвижение в категориях книги, развивающая продукция,
+          канцелярия, товары для дома
+        </p>
+      </div>
+      <div
+        class="max-w-md max-h-80 object-contain overflow-hidden flex justify-between flex-1"
       >
-        <img src="/print.png" alt="zzpost logo" class="h-8" />
-        Перейти на сайт
-      </a>
-    </li>
-    <li class="ml-auto lg:max-w-[50%] text-xl font-medium">
-      Издательство
-      <p class="text-base font-normal text-zinc-500">
-        Разработка/ доработка, производство и регистрация книг, тематических
-        изданий и развивающей продукции под заказ.<br />- Подготовка материалов
-        для издания (дизайн, верстка, корректура)<br />- Производство<br />-
-        Регистрация необходимой документации (консультации или услуга
-        по&nbsp;сертификации, декларированию, ISBN, ШК и тд)
-      </p>
-    </li>
-    <li class="lg:max-w-[50%] text-xl font-medium">
-      Разработка продукта
-      <p class="text-base font-normal text-zinc-500 mb-6">
-        концепции, линейки продукции, регистрация товарного знака, производство
-        и продвижение в категориях книги, развивающая продукция, канцелярия,
-        товары для дома
-      </p>
-      <div class="flex">
         <a
           href="https://www.wildberries.ru/brands/tsedrik"
-          class="flex flex-col items-center text-base gap-3 hover:text-indigo-600 leading-none"
+          class="flex flex-col items-center text-base gap-3 hover:text-indigo-600 leading-none basis-[104px]"
         >
-          <img src="/WB.svg" alt="wildberries logo" class="h-10" />
+          <img src="/wb.png" alt="wildberries logo" class="h-12" />
           Цедрик
         </a>
         <a
           href="https://www.wildberries.ru/brands/pantry-vitkov"
-          class="flex flex-col items-center text-base gap-3 hover:text-indigo-600 leading-none"
+          class="flex flex-col items-center text-base gap-3 hover:text-indigo-600 leading-none basis-[104px]"
         >
-          <img src="/WB.svg" alt="wildberries logo" class="h-10" />
+          <img src="/wb.png" alt="wildberries logo" class="h-12" />
+          Pantry Vitkov
+        </a>
+        <a
+          href="https://www.ozon.ru/brand/pantry-vitkov-87366686/"
+          class="flex flex-col items-center text-base gap-3 hover:text-indigo-600 leading-none basis-[104px]"
+        >
+          <img src="/ozon.png" alt="wildberries logo" class="h-12" />
           Pantry Vitkov
         </a>
       </div>
     </li>
-    <li class="ml-auto lg:max-w-[50%] text-xl font-medium">
-      Создание и организация социально культурных проектов
+    <li
+      class="text-xl font-medium flex gap-5 flex-col md:flex-row md:flex-wrap justify-between"
+    >
+      <div class="flex-1">
+        <h3 class="text-2xl mb-2">
+          Создание и организация социально культурных проектов
+        </h3>
+        <p class="text-base font-normal text-zinc-500 max-w-[70ch]">
+          концепции, линейки продукции, регистрация товарного знака,
+          производство и продвижение в категориях книги, развивающая продукция,
+          канцелярия, товары для дома
+        </p>
+      </div>
+      <div
+        class="max-w-md object-contain overflow-hidden flex flex-col gap-5 justify-between flex-1"
+      >
+      </div>
+      <div class="basis-full flex gap-5 flex-col md:flex-row mt-5">
+        <div class="">
+          <h4>Коммерческие культурные проекты</h4>
+          <p class="text-base font-normal max-w-[70ch]">
+            разработка концепции/ сценария мероприятия , подбор площадки, подбор
+            спектакля/ исполнителей, подбор подрядчиков по фуршету/ подаркам,
+            организация работы на площадке
+          </p>
+          <ul class="text-base font-normal text-zinc-500 max-w-[70ch] mt-2">
+            <li>
+              - Корпоративные мероприятия под заказ для сотрудников организации
+            </li>
+            <li>
+              - Новогодние праздничные мероприятия для детей сотрудников
+              оргранизации
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <h4>Социальные культурные проекты</h4>
+          <p class="text-base font-normal max-w-[70ch]">
+            разработка концепции/ сценария мероприятия, подбор площадки, подбор
+            исполнителей, организация работы на площадке
+          </p>
+          <ul
+            class="text-base font-normal text-zinc-500 max-w-[70ch] mt-2 flex flex-col gap-2"
+          >
+            <li class="flex flex-col">
+              Детские ТВ программы "Остров Любознаек"
+              <div class="flex gap-2">
+                <a
+                  href="https://www.himkismi.ru/arhive-programm/ostrov-lyuboznaek/?ysclid=l76a8n3p2w721899296"
+                >
+                  <img src="internet.png" alt="" class="h-8" />
+                </a>
+                <a href="https://youtu.be/Ee1egfnQcco">
+                  <img src="youtube.png" alt="" class="h-8" />
+                </a>
+                <a href="https://ok.ru/video/5707007244">
+                  <img src="odnoklassniki.png" alt="" class="h-8" />
+                </a>
+              </div>
+            </li>
+            <li>Развлекательные пограммы для детей "Цедрик"</li>
+            <li class="flex flex-col">
+              Детская ТВ программа "Добрая сказка"
+              <div class="flex gap-2">
+                <a href="https://youtu.be/Ee1egfnQcco">
+                  <img src="youtube.png" alt="" class="h-8" />
+                </a>
+              </div>
+            </li>
+            <li class="flex flex-col">
+              Выставочный благотворительный проект "Любимые цветы"
+              <div class="flex gap-2">
+                <a href="https://wuomr.ru/page/view-post?id=141">
+                  <img src="internet.png" alt="" class="h-8" />
+                </a>
+                <a
+                  href="https://inhimkicity.ru/novosti/obschestvo/lyubimye-cvety-v-himkah"
+                >
+                  <img src="internet.png" alt="" class="h-8" />
+                </a>
+                <a href="https://vk.com/wall-205596169_302">
+                  <img src="vk.png" alt="" class="h-8" />
+                </a>
+                <a href="https://t.me/khimki_wuor/411">
+                  <img src="telegram.png" alt="" class="h-8" />
+                </a>
+              </div>
+            </li>
+
+            <li class="flex flex-col">
+              Социально образовательный проект для поддростков "Мотиватор Тин"
+              <div class="flex gap-2">
+                <a
+                  href="http://www.wuor.ru/news/v-khimkakh-startoval-obrazovatelnyy-proekt-dlya-starsheklassnikov-motivator-tin-116712/"
+                >
+                  <img src="internet.png" alt="" class="h-8" />
+                </a>
+                <a href="https://wuomr.ru/page/view-post?id=236">
+                  <img src="internet.png" alt="" class="h-8" />
+                </a>
+                <a href="https://wuomr.ru/page/view-post?id=259">
+                  <img src="internet.png" alt="" class="h-8" />
+                </a>
+                <a
+                  href="https://vk.com/malyi.biznes.khimki?w=wall-129806002_4887"
+                >
+                  <img src="vk.png" alt="" class="h-8" />
+                </a>
+              </div>
+            </li>
+            <li class="flex flex-col">
+              Видео поздравление жителей г. Химки с Днем России
+              <div class="flex gap-2">
+                <a href="https://t.me/khimki_wuor/139">
+                  <img src="telegram.png" alt="" class="h-8" />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </li>
-  </ol>
+  </ul>
 </section>
