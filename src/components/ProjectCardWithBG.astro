@@ -1,0 +1,23 @@
+---
+import OutsideLink from "./OutsideLink.astro";
+
+const { title, desc, thumbnail, links } = Astro.props;
+---
+
+<article class="flex gap-5 lg:gap-10 flex-col md:flex-row">
+  <div class="basis-2/4 h-96">
+    <img src={thumbnail} alt="" class="object-cover h-full w-full" />
+  </div>
+  <div class="basis-2/4 flex flex-col">
+    <h3 class="font-medium text-2xl mb-2">{title}</h3>
+    <p class="whitespace-pre-line max-w-[70ch] text-base text-zinc-600">{desc}</p>
+    {links.length > 0 && (
+      <p class="text-base mt-5 mb-2 text-zinc-600">Ссылки:</p>
+      <div class="flex gap-2">
+        {links.map((link) => (
+          <OutsideLink {...link}/>
+        ))}
+      </div>
+    )}
+  </div>
+</article>

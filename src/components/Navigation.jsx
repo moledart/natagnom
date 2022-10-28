@@ -11,21 +11,6 @@ const links = [
     active: false,
   },
   {
-    title: 'Издательство',
-    link: '#publish',
-    active: false,
-  },
-  {
-    title: 'Типография',
-    link: '#printshop',
-    active: false,
-  },
-  {
-    title: 'Отзывы',
-    link: '',
-    active: false,
-  },
-  {
     title: 'Контакты',
     link: '',
     active: false,
