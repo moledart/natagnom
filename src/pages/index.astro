@@ -1,6 +1,7 @@
 ---
 // Component Imports
 import About from '../components/About.astro';
+import Contacts from '../components/Contacts.astro';
 import Hero from '../components/Hero.astro';
 import Navigation from '../components/Navigation.astro';
 import Projects from '../components/Projects.astro';
@@ -25,6 +26,17 @@ import Projects from '../components/Projects.astro';
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Наталья Кротова - автор и креативный предприниматель"
+    />
+    <meta property="og:url" content="https://natagnom.vercel.app/" />
+    <meta property="og:image" content="https://natagnom.vercel.app/hero.webp" />
+    <meta
+      property="og:description"
+      content="30 лет я занимаюсь рекламой, созданием брендовых историй и производством. Вместе со своей с командой мы сделали 10000 проектов от названия бренда до его комплексной застройки. Этот опыт помогает мне реализовывать интересные задачи."
+    />
   </head>
 
   <body>
@@ -33,6 +45,7 @@ import Projects from '../components/Projects.astro';
       <Hero />
       <About />
       <Projects />
+      <Contacts />
     </main>
     <div class="container mx-auto"></div>
     <style>
