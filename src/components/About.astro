@@ -5,15 +5,6 @@ import LinkTo from './LinkTo.astro';
 <section class="py-10 flex flex-col gap-16" id="#printshop" id="about">
   <div class="flex flex-col lg:flex-row gap-10">
     <div class="lg:basis-1/2">
-      <iframe
-        class="w-full aspect-video"
-        src="https://rutube.ru/play/embed/39de93ca46a5c7e3ed9cb2fe3d4ce73a/"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-
-    <div class="lg:basis-1/2">
       <small>Биография</small>
       <p class="max-w-prose mb-2 text-lg">
         30 лет я занимаюсь рекламой, созданием брендовых историй и
@@ -22,8 +13,13 @@ import LinkTo from './LinkTo.astro';
         мне реализовывать интересные задачи.
       </p>
       <LinkTo title="Читать полностью" address="/biography.pdf" />
+      <div class="mt-6">
+        <LinkTo title="Смотреть видео на Rutube" address="https://rutube.ru/play/embed/39de93ca46a5c7e3ed9cb2fe3d4ce73a/" />
+      </div>
+    </div>
 
-      <h2 class="text-2xl font-medium mb-5 mt-10">Моя деятельность</h2>
+    <div class="lg:basis-1/2">
+      <h2 class="text-2xl font-medium mb-5">Моя деятельность</h2>
       <ul class="list-disc px-5 text-lg tet-zinc-900 flex flex-col gap-5">
         <li class="leading-tight">
           Полиграфическое производство и издательство <br />
